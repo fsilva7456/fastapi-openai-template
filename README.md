@@ -12,27 +12,6 @@ A production-ready template for creating AI-powered APIs using FastAPI and OpenA
 - Type hints and Pydantic models
 - Error handling
 
-## Project Structure
-
-```
-├── app/
-│   ├── __init__.py
-│   ├── main.py              # FastAPI application
-│   ├── config.py            # Configuration management
-│   ├── services/            # Business logic
-│   │   ├── __init__.py
-│   │   └── openai_service.py
-│   └── schemas/            # Pydantic models
-│       ├── __init__.py
-│       ├── request.py
-│       └── response.py
-├── .env.example            # Environment variables template
-├── requirements.txt        # Python dependencies
-├── Procfile               # Deployment configuration
-├── runtime.txt            # Python version specification
-└── README.md
-```
-
 ## Setup
 
 1. Clone the repository:
@@ -44,7 +23,7 @@ cd fastapi-openai-template
 2. Create a virtual environment:
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: .\\venv\\Scripts\\activate
+source venv/bin/activate  # On Windows: .\venv\Scripts\activate
 ```
 
 3. Install dependencies:
@@ -98,10 +77,6 @@ curl -X POST "http://localhost:8000/api/v1/analyze" \
 2. Modify `app/schemas/response.py` to change response structure
 3. Add new endpoints in `app/main.py`
 4. Add new services in `app/services/`
-
-## Contributing
-
-Pull requests are welcome! For major changes, please open an issue first.
 
 ## License
 
